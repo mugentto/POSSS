@@ -18,9 +18,7 @@ return new class extends Migration
             $table->integer('price');
             $table->integer('stock');
             $table->unsignedBigInteger('category_id');
-            $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->nullable();
-
+           
             $table->timestamps();
             $table->softDeletes();
 

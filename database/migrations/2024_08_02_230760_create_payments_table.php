@@ -14,13 +14,11 @@ return new class extends Migration
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger("sales_id");
-            $table->unsignedBigInteger("prducts_id");
+            $table->unsignedBigInteger("products_id");
             $table->integer("quantity");
             $table->integer("unit_price")->unsigned();
             $table->integer("subtotal")->unsigned();
-            $table->timestamp("created_at")->useCurrent();
-            $table->timestamp("updated_at")->nullable();
-
+          
             $table->timestamps();
             $table->softDeletes();
             

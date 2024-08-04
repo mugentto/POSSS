@@ -17,9 +17,7 @@ return new class extends Migration
             $table->integer("total_amount");
             $table->string("payment_method");
             $table->date("sale_date");
-            $table->timestamp("created_at")->useCurrent();
-            $table->timestamp("updated_at")->unsigned();
-
+            
             $table->timestamps();
             $table->softDeletes();
 

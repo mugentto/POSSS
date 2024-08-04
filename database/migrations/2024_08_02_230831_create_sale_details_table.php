@@ -18,9 +18,7 @@ return new class extends Migration
             $table->integer("quantity");
             $table->integer("unit_price")->unsigned();
             $table->integer("subtotal")->unsigned();
-            $table->timestamp("created_at")->useCurrent();
-            $table->timestamp("updated_at")->unsigned();
-
+        
             $table->timestamps();
             $table->softDeletes();
 

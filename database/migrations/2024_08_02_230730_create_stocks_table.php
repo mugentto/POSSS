@@ -16,9 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger("product_id");
             $table->integer("quantity")->unsigned();
             $table->date("stock_date");
-            $table->timestamp("created_at")->useCurrent();
-            $table->timestamp("updated_at")->nullable();
-            
+        
             $table->timestamps();
             $table->softDeletes();
 
